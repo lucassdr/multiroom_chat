@@ -20,7 +20,7 @@ var app = express();
 /* diz qual a engine a ser utilizada */
 app.set('view engine', 'ejs');
 /* diz o local da engine no projeto */
-app.set('./app/views');
+app.set('views','./app/views');
 
 /* configurando os middlewares express.static */
 app.use(express.static('./app/public'));
