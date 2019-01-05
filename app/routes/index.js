@@ -1,6 +1,5 @@
 module.exports = function(app){
-    app.get('/', function(req, res){
-        res.render('index.ejs');  
-        // res.send('teste');
+    app.get('/', function(req, res){        
+        app.app.controllers.index.home(app, req, res);
     });
 }
